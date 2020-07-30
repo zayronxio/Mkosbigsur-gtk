@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mkos-big-sur
+Comment=
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mkos-big-sur
+MetacityTheme=macOS
+IconTheme=MKos-big-sur
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:
