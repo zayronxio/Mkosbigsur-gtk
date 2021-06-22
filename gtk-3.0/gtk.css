@@ -2793,6 +2793,7 @@ read if you used those and something break with a version upgrade you're on your
 .nautilus-window scrolledwindow {background: white; border-radius: 0px 0px 11px 0px;}
 .nautilus-window decoration {border-radius: 11px;} 
 .csd.nautilus-window box separator {background: transparent;}
+headerbar separator.titlebutton  {background: transparent;}
 
 .nautilus-window  stack box grid {background: transparent; border-radius: 0px 0px 11px 0px;}
 .nautilus-window  stack box {background: transparent; border-radius: 0px 0px 11px 0px;}
