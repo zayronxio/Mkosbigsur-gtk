@@ -1,3 +1,5 @@
+
+
 * {
   -GtkScrollbar-has-backward-stepper: false;
   -GtkScrollbar-has-forward-stepper: false;
@@ -17,7 +19,7 @@
   outline-width: 1px;
   outline-offset: -3px;
   outline-style: dashed;
-  outline-color: shade(#FFFFFF, 0.75);
+  outline-color: shade(#FFFFFF, 0.74);
   -gtk-outline-radius: 0; }
 
 .background {
@@ -2666,79 +2668,6 @@ panel-toplevel.background na-tray-applet {
   .wnck-pager:hover {
     background-color: alpha(#2E7CF7, 0.2); }
 
-.xfce4-panel.panel {
-  background-color: #FFFFFF; }
-  .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
-    color: #000000;
-    background-color: #FFFFFF;
-    border-radius: 0;
-    border: none; }
-    .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
-      border: none;
-      color: #000000;
-      background-color: shade(#FFFFFF, 1.1); }
-    .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.sidebar-button:checked {
-      color: #FFFFFF;
-      border: none;
-      box-shadow: none;
-      background-image: none;
-      background-color: #2E7CF7; }
-  .xfce4-panel.panel .tasklist button {
-    color: #000000;
-    background-color: #FFFFFF;
-    border-radius: 0;
-    border: none; }
-    .xfce4-panel.panel .tasklist button:hover {
-      border: none;
-      color: #000000;
-      background-color: shade(#FFFFFF, 1.1); }
-    .xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
-      color: #FFFFFF;
-      border: none;
-      box-shadow: none;
-      background-image: none;
-      background-color: #2E7CF7; }
-
-#XfceNotifyWindow.osd {
-  background-color: #FFFFFF;
-  color: #000000;
-  border-radius: 8px;
-  border: none; }
-  #XfceNotifyWindow.osd label #summary {
-    font-weight: bold; }
-  #XfceNotifyWindow.osd button {
-    padding: 6px 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    color: #000000;
-    border-color: shade(#FFFFFF, 0.9);
-    background-color: #FFFFFF;
-    -gtk-outline-radius: 8px; }
-    #XfceNotifyWindow.osd button:active, #XfceNotifyWindow.osd button:checked {
-      color: #000000;
-      border-color: alpha(#000000, 0.1);
-      background-color: alpha(#000000, 0.1); }
-      #XfceNotifyWindow.osd button:active:backdrop, #XfceNotifyWindow.osd button:checked:backdrop {
-        color: #8C8C8C;
-        border-color: shade(#FBFBFB, 0.95);
-        background-color: shade(#FBFBFB, 0.95); }
-      #XfceNotifyWindow.osd button:active:disabled, #XfceNotifyWindow.osd button:checked:disabled {
-        color: mix(#000000, mix(#000000, #FFFFFF, 0.75), 0.1);
-        border-color: mix(#000000, #FFFFFF, 0.95);
-        background-color: mix(#000000, #FFFFFF, 0.95); }
-        #XfceNotifyWindow.osd button:active:disabled:backdrop, #XfceNotifyWindow.osd button:checked:disabled:backdrop {
-          color: mix(#000000, #FFFFFF, 0.75);
-          border-color: mix(#000000, #FFFFFF, 0.98);
-          background-color: mix(#000000, #FFFFFF, 0.98); }
-    #XfceNotifyWindow.osd button:disabled {
-      color: mix(#000000, mix(#000000, #FFFFFF, 0.75), 0.5); }
-      #XfceNotifyWindow.osd button:disabled:backdrop {
-        color: mix(#000000, #FFFFFF, 0.75); }
-    #XfceNotifyWindow.osd button:backdrop {
-      color: #8C8C8C;
-      border-color: shade(#FBFBFB, 0.9);
-      background-color: #FBFBFB; }
 
 .nemo-window .nemo-window-pane widget.entry {
   border: 1px solid;
@@ -2878,3 +2807,143 @@ read if you used those and something break with a version upgrade you're on your
 
 .nautilus-window .sidebar-icon {color: #0061fc;}
 
+/**************xfce4-panel*****************/
+.xfce4-panel menubar label, .xfce4-panel widget button label { color: white; text-shadow: 1px 1px 3px rgba (0,0,0,0.8
+);}
+.xfce4-panel .popup label, .xfce4-panel .popup image,  .xfce4-panel widget button widget image  {color: black; text-shadow: 0px 0px 0px rgba (0,0,0,0.5);}
+.xfce4-panel button {background-color: transparent; background: transparent;
+-gtk-icon-shadow: 1px 1px 3px rgba (0,0,0,0.3);}
+.xfce4-panel button image {color: white; text-shadow: 0px 1px alpha(#000000, 0.40),0 -1px alpha(#ffffff, 0.04),-1px  0px alpha(#ffffff, 0.04);}
+
+
+.xfce4-panel.panel {
+  background-color: #FFFFFF; }
+  .xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
+    color: #000000;
+    background-color: transparent;
+    border-radius: 0;
+    border: none; }
+    .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
+      border: none;
+      color: #000000;
+      background-color: shade(#FFFFFF, 1.1); }
+    .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.sidebar-button:checked {
+      color: #FFFFFF;
+      border: none;
+      box-shadow: none;
+      background-image: none;
+      background-color: #2E7CF7; }
+  .xfce4-panel.panel .tasklist button {
+    color: #ffffff;
+    background-color: #FFFFFF;
+    border-radius: 0;
+    border: none; }
+    .xfce4-panel.panel .tasklist button:hover {
+      border: none;
+      color: #000000;
+      background-color: shade(#FFFFFF, 1.1); }
+    .xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
+      color: #FFFFFF;
+      border: none;
+      box-shadow: none;
+      background-image: none;
+      background-color: #2E7CF7; }
+
+
+.background.xfce4-panel.panel button {color: white;}
+.xfce4-panel #clock-button label {font-weight: 500;}
+#xfce_sensors box label {color: white; font-weight: 500; text-shadow: 1px 1px 5px rgba (0,0,0,0.4
+);}
+
+#XfceNotifyWindow.osd {
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 8px;
+  border: none; }
+  #XfceNotifyWindow.osd label #summary {
+    font-weight: bold; }
+  #XfceNotifyWindow.osd button {
+    padding: 6px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    color: #000000;
+    border-color: shade(#FFFFFF, 0.9);
+    background-color: #FFFFFF;
+    -gtk-outline-radius: 8px; }
+    #XfceNotifyWindow.osd button:active, #XfceNotifyWindow.osd button:checked {
+      color: #000000;
+      border-color: alpha(#000000, 0.1);
+      background-color: alpha(#000000, 0.1); }
+      #XfceNotifyWindow.osd button:active:backdrop, #XfceNotifyWindow.osd button:checked:backdrop {
+        color: #8C8C8C;
+        border-color: shade(#FBFBFB, 0.95);
+        background-color: shade(#FBFBFB, 0.95); }
+      #XfceNotifyWindow.osd button:active:disabled, #XfceNotifyWindow.osd button:checked:disabled {
+        color: mix(#000000, mix(#000000, #FFFFFF, 0.75), 0.1);
+        border-color: mix(#000000, #FFFFFF, 0.95);
+        background-color: mix(#000000, #FFFFFF, 0.95); }
+        #XfceNotifyWindow.osd button:active:disabled:backdrop, #XfceNotifyWindow.osd button:checked:disabled:backdrop {
+          color: mix(#000000, #FFFFFF, 0.75);
+          border-color: mix(#000000, #FFFFFF, 0.98);
+          background-color: mix(#000000, #FFFFFF, 0.98); }
+    #XfceNotifyWindow.osd button:disabled {
+      color: mix(#000000, mix(#000000, #FFFFFF, 0.75), 0.5); }
+      #XfceNotifyWindow.osd button:disabled:backdrop {
+        color: mix(#000000, #FFFFFF, 0.75); }
+    #XfceNotifyWindow.osd button:backdrop {
+      color: #8C8C8C;
+      border-color: shade(#FBFBFB, 0.9);
+      background-color: #FBFBFB; }
+
+
+.thunar .path-bar button 
+{
+  border: none; 
+    background: transparent;
+
+      }
+
+.xfsm-logout-dialog {background: rgba(0, 0, 0, 0.77); border-radius: 15px;}
+.xfsm-logout-dialog button {background: rgba(0, 0, 0, 0.40); border: none;}
+.xfsm-logout-dialog .dialog-vbox separator  {background: transparent;}
+.xfsm-logout-dialog button.text-button {background: rgba(198, 5, 34, 0.80);}
+.xfsm-logout-dialog decoration {border-radius: 15px;
+}
+/*warnin imagen*/
+viewport image.error {background: transparent; color: #f05439; border: none;}
+
+/**************Menu Wisker*****************/
+
+window#whiskermenu-window {
+background: rgba(254, 252, 255, 0.61);
+border-radius: 0 0 12px 12px;
+}
+
+window#whiskermenu-window treeview {background: transparent;}
+window#whiskermenu-window frame border {
+background: none;
+border-radius: 0 0 12px 12px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+border-color: transparent;
+}
+
+
+window#whiskermenu-window  box widget {color: transparent;}
+#whiskermenu-window iconview {background: transparent;}
+
+
+/****mate panel***/
+
+.mate-panel-menu-bar#PanelPlug image {-gtk-icon-transform: scale(0.85);}
+.mate-panel-menu-bar#PanelPlug volume-applet image {-gtk-icon-transform: scale(0.70);}
+.mate-panel-menu-bar button {color: transparent;}
+menubar.-vala-panel-appmenu-bold menuitem label {color: rgb(255,255,255); text-shadow: 1px 1px 5px rgba (0,0,0,0.4);}
+
+.mate-panel-menu-bar #clock-applet-button label, .mate-panel-menu-bar #PanelApplet label {color: white; font-weight: 500; text-shadow: 1px 1px 5px rgba (0,0,0,0.4);}
+
+.mate-panel-menu-bar .-vala-panel-appmenu-core menuitem .popup label, menubar.-vala-panel-appmenu-bold menuitem .popup label {
+color: black; 
+font-weight: 300; 
+text-shadow: none;
+}
